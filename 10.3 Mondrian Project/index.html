@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .outside-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: beige;
+      height: 100vh;
+    }
+
+    .inside-container {
+      display: grid;
+      background-color: black;
+      width: 748px;
+      height: 747px;
+      grid-template: 414px 131px 155px 20px / 320px 198px 153px 50px;
+      gap: 9px;
+
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+    background-color: #F0F1EC;
+  }
+    .black {
+      background-color: #232629;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .blue {
+      background-color: #004592;
+      display: grid;
+      grid-template: 130px 1px / 1fr;
+      gap: 0;
+
+    }
+
+    .one {
+      grid-column: span 3;
+    }
+    .two {
+      grid-row: span 2;
+    }
+
+    .three {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .four {
+      grid-row: span 2;
+    }
+
+    .border {
+      background-color: black;
+
+    }
+
+    .inside-blue {
+      background-color: #004592;
+    }
+
+
+
+    
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="outside-container">
+    <div class="inside-container">
+      <div class="red"></div>
+      <div class="white one"></div>
+      <div class="white two"></div>
+      <div class="white three"></div>
+      <div class="blue">
+        <div class="inside-blue"></div>
+        <div class="border"></div>
+      </div>
+      <div class="white four"></div>
+      <div class="white five"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+
+    </div>
+  </div>
+</body>
+
+</html>
